@@ -304,24 +304,24 @@
 
 
     <script>
+    const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+    const yArray = [55, 49, 44, 24, 15];
 
-        const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
-        const yArray = [55, 49, 44, 24, 15];
+    const data = [{
+        labels: xArray,
+        values: yArray,
+        type: "pie",
+        hole: 0.4,
+        textinfo: "label+percent"
+    }];
 
-        const data = [{
-          x:xArray,
-          y:yArray,
-          type:"bar",
-          orientation:"v",
-          marker: {color:"rgba(0,0,255,0.6)"}
-        }];
+    const layout = {
+        title: "World Wide Wine Production",
+        paper_bgcolor: "transparent",
+        font: {color: "white"}
+    };
 
-        const layout = {
-            title:"World Wide Wine Production"
-        };
-
-        Plotly.newPlot("myPlot", data, layout);
-
+    Plotly.newPlot("myPlot", data, layout);
     </script>
 
 
