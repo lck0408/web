@@ -1,43 +1,316 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
+
 <head>
-<title>lck blog</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>lck blog</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 <body>
 
-<img src="images.jpg" alt="W3Schools.com" width="1280" height="720"></p>
+    <!-- 導覽列 -->
+    <nav class="navbar">
 
-<iframe width="1374" height="773" src="https://www.youtube.com/embed/-8HYH_pH1og?list=RD-8HYH_pH1og" title="新竹縣自強國中管樂團2024@SIBF (Division2A)Die Csárdásfürstin “ Selections from Operetta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="nav-container">
+
+            <div class="logo">
+                LCK BLOG
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#photo">
+                    照片
+                </a>
+
+                <a href="#video">
+                    影片
+                </a>
+
+                <a href="#chart">
+                    圖表
+                </a>
+
+                <a href="#links">
+                    連結
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- 主要內容 -->
+    <main>
+
+
+        <!-- 圖片 -->
+        <section
+            class="section"
+            id="photo"
+        >
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h1>
+                        照片
+                    </h1>
+
+                </div>
+
+
+                <div class="card photo-card">
+
+                    <img
+                        src="images.jpg"
+                        alt="我的照片"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
 
 
 
+        <!-- YouTube -->
+        <section
+            class="section"
+            id="video"
+        >
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h1>
+                        影片
+                    </h1>
+
+                </div>
+
+
+                <div class="card video-card">
+
+                    <div class="video-container">
+
+                        <iframe 
+                            src="https://www.youtube.com/embed/NQ4RvLKGQFo" 
+                            title="新竹縣立自強國民中學管樂團衛武營演出宝島" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
 
-<div id="myPlot" style="width:100%;max-width:700px"></div>
+        <!-- Plotly -->
+        <section
+            class="section"
+            id="chart"
+        >
 
-<script>
-const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
-const yArray = [55, 49, 44, 24, 15];
+            <div class="container">
 
-const data = [{
-  x:xArray,
-  y:yArray,
-  type:"bar",
-  orientation:"v",
-  marker: {color:"rgba(0,0,255,0.6)"}
-}];
+                <div class="section-title">
 
-const layout = {title:"World Wide Wine Production"};
+                    <h1>
+                        圖表
+                    </h1>
 
-Plotly.newPlot("myPlot", data, layout);
-</script>
+                </div>
 
-</p><a href="https://www.w3schools.com">This is a link</a>
+
+                <div class="card chart-card">
+
+                    <div
+                        id="myPlot"
+                        style="width:100%;max-width:700px"
+                    >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+         <!-- =========================連結區========================= -->
+
+        <section class="section" id="links">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h1>
+                        連結
+                    </h1>
+
+                </div>
+
+
+                <div class="links-grid">
+
+
+                    <!-- 連結 1 -->
+                    <a
+                        href="https://www.w3schools.com"
+                        target="_blank"
+                        class="link-card"
+                    >
+
+                        <div class="link-icon">
+                            01
+                        </div>
+
+                        <div class="link-content">
+
+                            <h2>
+                                同學一
+                            </h2>
+
+                        </div>
+
+                        <div class="link-arrow">
+                            →
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- 連結 2 -->
+                    <a
+                        href="https://www.w3schools.com"
+                        target="_blank"
+                        class="link-card"
+                    >
+
+                        <div class="link-icon">
+                            02
+                        </div>
+
+                        <div class="link-content">
+
+                            <h2>
+                                同學二
+                            </h2>
+
+                        </div>
+
+                        <div class="link-arrow">
+                            →
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- 連結 3 -->
+                    <a
+                        href="https://www.w3schools.com"
+                        target="_blank"
+                        class="link-card"
+                    >
+
+                        <div class="link-icon">
+                            03
+                        </div>
+
+                        <div class="link-content">
+
+                            <h2>
+                                同學三
+                            </h2>
+
+                        </div>
+
+                        <div class="link-arrow">
+                            →
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 LCK Blog
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         你的原本 Plotly
+         不修改
+    ========================== -->
+
+    <script>
+
+        const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+        const yArray = [55, 49, 44, 24, 15];
+
+        const data = [{
+          x:xArray,
+          y:yArray,
+          type:"bar",
+          orientation:"v",
+          marker: {color:"rgba(0,0,255,0.6)"}
+        }];
+
+        const layout = {
+            title:"World Wide Wine Production"
+        };
+
+        Plotly.newPlot("myPlot", data, layout);
+
+    </script>
 
 
 </body>
+
 </html>
