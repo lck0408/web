@@ -426,6 +426,11 @@ img {
         translateX(8px);
 }
 
+#myPlot {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
 
 
 @media (max-width: 900px) {

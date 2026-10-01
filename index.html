@@ -310,6 +310,8 @@
     </footer>
 
 
+    <div id="myPlot" style="width:100%;"></div>
+
     <script>
     const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
     const yArray = [55, 49, 44, 24, 15];
@@ -319,16 +321,21 @@
         values: yArray,
         type: "pie",
         hole: 0.4,
-        textinfo: "values"
+        textinfo: "percent"
     }];
 
     const layout = {
         title: "World Wide Wine Production",
         paper_bgcolor: "transparent",
-        font: {color: "white"}
+        font: {color: "white"},
+        autosize: true
     };
 
-    Plotly.newPlot("myPlot", data, layout);
+    const config = {
+        responsive: true
+    };
+
+    Plotly.newPlot("myPlot", data, layout, config);
     </script>
 
 
