@@ -2,12 +2,10 @@
 <html lang="zh-TW">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>lck blog</title>
 
@@ -15,14 +13,20 @@
 
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
 </head>
 
 
 <body>
 
+
+
     <script>
-        
+
         document.addEventListener("contextmenu", function (e) {
             e.preventDefault();
         });
@@ -30,27 +34,36 @@
 
         document.addEventListener("keydown", function (e) {
 
+            // F12
             if (e.key === "F12") {
                 e.preventDefault();
             }
 
+            // Ctrl + Shift + I
             if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
                 e.preventDefault();
             }
 
+            // Ctrl + Shift + J
             if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") {
                 e.preventDefault();
             }
 
+            // Ctrl + Shift + C
             if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") {
                 e.preventDefault();
             }
 
+            // Ctrl + U
             if (e.ctrlKey && e.key.toLowerCase() === "u") {
                 e.preventDefault();
             }
+
         });
+
     </script>
+
+
 
 
     <nav class="navbar">
@@ -60,6 +73,7 @@
             <div class="logo">
                 LCK BLOG
             </div>
+
 
             <div class="nav-links">
 
@@ -86,7 +100,10 @@
     </nav>
 
 
+
+
     <main>
+
 
 
         <section
@@ -120,6 +137,7 @@
 
 
 
+
         <section
             class="section"
             id="video"
@@ -140,12 +158,12 @@
 
                     <div class="video-container">
 
-                        <iframe 
-                            src="https://www.youtube.com/embed/NQ4RvLKGQFo" 
-                            title="新竹縣立自強國民中學管樂團衛武營演出宝島" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
+                        <iframe
+                            src="https://www.youtube.com/embed/NQ4RvLKGQFo"
+                            title="新竹縣立自強國民中學管樂團衛武營演出寶島"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
                             allowfullscreen>
                         </iframe>
 
@@ -156,6 +174,7 @@
             </div>
 
         </section>
+
 
 
 
@@ -177,9 +196,10 @@
 
                 <div class="card chart-card">
 
+
                     <div
                         id="myPlot"
-                        style="width:100%;max-width:700px"
+                        style="width:100%; max-width:700px;"
                     >
                     </div>
 
@@ -192,7 +212,10 @@
 
 
 
-        <section class="section" id="links">
+        <section
+            class="section"
+            id="links"
+        >
 
             <div class="container">
 
@@ -208,6 +231,7 @@
                 <div class="links-grid">
 
 
+
                     <a
                         href="https://jjkke645.github.io/assdd/index.html"
                         target="_blank"
@@ -218,6 +242,7 @@
                             01
                         </div>
 
+
                         <div class="link-content">
 
                             <h2>
@@ -226,11 +251,13 @@
 
                         </div>
 
+
                         <div class="link-arrow">
-                            點擊前往→
+                            點擊前往 →
                         </div>
 
                     </a>
+
 
 
 
@@ -244,6 +271,7 @@
                             02
                         </div>
 
+
                         <div class="link-content">
 
                             <h2>
@@ -252,11 +280,13 @@
 
                         </div>
 
+
                         <div class="link-arrow">
-                            點擊前往→
+                            點擊前往 →
                         </div>
 
                     </a>
+
 
 
 
@@ -270,6 +300,7 @@
                             03
                         </div>
 
+
                         <div class="link-content">
 
                             <h2>
@@ -278,8 +309,9 @@
 
                         </div>
 
+
                         <div class="link-arrow">
-                            點擊前往→
+                            點擊前往 →
                         </div>
 
                     </a>
@@ -296,46 +328,109 @@
 
 
 
+
     <footer>
-        <p>Copyright © 2026 LI CHENG-KAI All right reserved.</p>
+
+        <p>
+            Copyright © 2026 LI CHENG-KAI All right reserved.
+        </p>
+
 
         <div class="social-links">
-            <a href="https://www.instagram.com/lck_0408/" target="_blank">
+
+            <a
+                href="https://www.instagram.com/lck_0408/"
+                target="_blank"
+                aria-label="Instagram"
+            >
+
                 <i class="fa-brands fa-instagram"></i>
+
             </a>
-            <a href="https://www.youtube.com/@lck0408" target="_blank">
+
+
+            <a
+                href="https://www.youtube.com/@lck0408"
+                target="_blank"
+                aria-label="YouTube"
+            >
+
                 <i class="fa-brands fa-youtube"></i>
+
             </a>
+
         </div>
+
     </footer>
 
 
-    <div id="myPlot" style="width:100%;"></div>
+
 
     <script>
-    const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
-    const yArray = [55, 49, 44, 24, 15];
 
-    const data = [{
-        labels: xArray,
-        values: yArray,
-        type: "pie",
-        hole: 0.4,
-        textinfo: "percent"
-    }];
+        const xArray = [
+            "Italy",
+            "France",
+            "Spain",
+            "USA",
+            "Argentina"
+        ];
 
-    const layout = {
-        title: "World Wide Wine Production",
-        paper_bgcolor: "transparent",
-        font: {color: "white"},
-        autosize: true
-    };
 
-    const config = {
-        responsive: true
-    };
+        const yArray = [
+            55,
+            49,
+            44,
+            24,
+            15
+        ];
 
-    Plotly.newPlot("myPlot", data, layout, config);
+
+        const data = [
+
+            {
+                labels: xArray,
+
+                values: yArray,
+
+                type: "pie",
+
+                hole: 0.4,
+
+                textinfo: "percent"
+            }
+
+        ];
+
+
+        const layout = {
+
+            title: "World Wide Wine Production",
+
+            paper_bgcolor: "transparent",
+
+            font: {
+                color: "white"
+            },
+
+            autosize: true
+        };
+
+
+        const config = {
+
+            responsive: true
+
+        };
+
+
+        Plotly.newPlot(
+            "myPlot",
+            data,
+            layout,
+            config
+        );
+
     </script>
 
 
